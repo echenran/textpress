@@ -15,10 +15,10 @@ $decoded = json_decode($curl_response, true);
 if (isset($decoded->response->status) && $decoded->response->status == 'ERROR') {
     die('error occured: ' . $decoded->response->errormessage);
 }
-echo "decoded: ".$decoded;
+echo '<pre>'; print_r($decoded); echo '</pre>';
 foreach($decoded as $items)
 {
-	echo "headline: ".$items['docs']['headline']."<br />";
+	echo "headline: ".$items['response']['docs']['headline']."<br />";
 }
 
 ?>
