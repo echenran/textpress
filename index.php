@@ -12,3 +12,4 @@ $client->account->messages->create(array(
 	'From' => "+16463744020", 
 	'Body' => "Hey Jenny! Good luck on the bar exam!", 
 	));
+?>

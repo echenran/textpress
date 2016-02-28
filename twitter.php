@@ -14,7 +14,7 @@ $settings = array(
 $url = "https://api.twitter.com/1.1/statuses/user_timeline.json";
 $requestMethod = "GET";
 if (isset($_GET['user']))  {$user = $_GET['user'];}  else {$user  = "iagdotme";}
-if (isset($_GET['count'])) {$count = $_GET['count'];} else {$count = 20;}
+if (isset($_GET['count'])) {$count = $_GET['count'];} else {$count = 1;}
 $getfield = "?screen_name=$user&count=$count";
 $twitter = new TwitterAPIExchange($settings);
 $string = json_decode($twitter->setGetfield($getfield)
@@ -31,14 +31,4 @@ foreach($string as $items)
 	echo "Friends: ". $items['user']['friends_count']."<br />";
 	echo "Listed: ". $items['user']['listed_count']."<br /><hr />";
 }
-/*
-$account_sid = 'AC5ddfda7909b9b25c06d3dbdc2dbe5a75'; 
-$auth_token = 'b0d3d3844073b78843bad5647831cdb7'; 
-$client = new Services_Twilio($account_sid, $auth_token); 
-
-$client->account->messages->create(array( 
-	'To' => "+16465042544", 
-	'From' => "+16463744020", 
-	'Body' => "Hey Jenny! Good luck on the bar exam!", 
-	));
-*/
+?>
