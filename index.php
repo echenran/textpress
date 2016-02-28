@@ -15,11 +15,8 @@ if (strtolower($service) == "twitter") {
 	include 'twitter.php';
 } else if (strtolower($service) == "nytimes") {
 	include 'nytimes.php';
-} else {
-		$client->account->messages->create(array(
-			'To' => $sendto,
-			'From' => "+16463744020",
-			'Body' => $query,
-		));
-	}
+} else if (strtolower($service) == 'youtube' {
+	include 'youtubephp.php';
+}
+
 ?>
