@@ -29,7 +29,7 @@ $client = new Services_Twilio($account_sid, $auth_token);
 $client->account->messages->create(array( 
 	'To' => $toField, 
 	'From' => "+16463744020", 
-	'Body' => "NY Time Article: ".$items[0]['headline']['main'].": ".$items['headline']['print_headline'], 
+	'Body' => "NY Time Article: ".$items[0]['headline']['main'].": ".$items['headline']['print_headline']." ".$items[0]['web_url'], 
 	));
 
 	?>
