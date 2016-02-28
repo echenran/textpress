@@ -10,6 +10,6 @@ $client = new Services_Twilio($account_sid, $auth_token);
 $client->account->messages->create(array( 
 	'To' => "+16465042544", 
 	'From' => "+16463744020", 
-	'Body' => $client->account->messages, 
+	'Body' => "Pls work", 
 	));
 ?>
