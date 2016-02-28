@@ -165,13 +165,13 @@
            	 		width: 350px;
            	 	"></input>
            	 	<br><br>
-           	 	<input type="text/css" placeholder="Friend's Number" style="
+           	 	<input id="sendto" type="text/css" placeholder="Friend's Number" style="
            	 		border:none;
            	 		border-top: 2px solid #2E3E4F;
            	 		width: 350px;
            	 	"></input>
            	 	<br><br>
-           	 	</label><input type="text/css" placeholder="Search Keyword" style="
+           	 	</label><input id="query" type="text/css" placeholder="Search Keyword" style="
            	 		border:none;
            	 		border-top: 2px solid #2E3E4F;
            	 		width: 350px;
@@ -179,16 +179,11 @@
            	 	<br><br>
            	 	<label id="media">Media</label>
            	 	<br>
-			 	<select style="
-			 		border:none;
-			 		border-top: 2px solid #2E3E4F;
-           	 		width: 350px;
-           	 		
-			 	">
-			 		<option value="default">Pick One</option>
+			 	<select id="servicedd"style="border:none;border-top: 2px solid #2E3E4F;width: 350px;">
+			 		<option value="0">Pick One</option>
   					<option value="youtube">Youtube Video</option>
-					<option value="tweet">Twitter Post</option>
-					<option value="nyTimes">NY Times Article</option>
+					<option value="twitter">Twitter Post</option>
+					<option value="nytimes">NY Times Article</option>
 				</select>
 
 			 	<br><br>
@@ -597,6 +592,7 @@
         </div>
     </div>
 
+    <script src="scripts.php"></script>
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
