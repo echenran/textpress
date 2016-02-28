@@ -1,4 +1,5 @@
 <?php
+header("Access-Control-Allow-Origin: http://localhost:9000");
 
 // this line loads the library 
 require('vendor/twilio/sdk/Services/Twilio.php'); 
