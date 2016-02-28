@@ -17,7 +17,7 @@ if (isset($decoded->response->status) && $decoded->response->status == 'ERROR') 
 }
 foreach($decoded as $items)
 {
-	echo "headline: ".$items['headline']."<br />";
+	echo "headline: ".$items['docs']['headline']."<br />";
 }
 
 ?>
