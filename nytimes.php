@@ -16,9 +16,9 @@ if (isset($decoded->response->status) && $decoded->response->status == 'ERROR') 
     die('error occured: ' . $decoded->response->errormessage);
 }
 echo '<pre>'; print_r($decoded); echo '</pre>';
-foreach($decoded as $items)
+foreach($decoded[response][docs] as $items)
 {
-	echo "headline: ".$items['response']['docs']['headline']."<br />";
+	echo "headline: ".$items['headline']."<br />";
 }
 
 ?>
