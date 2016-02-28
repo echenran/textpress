@@ -1,9 +1,8 @@
 <?php
 
 // this line loads the library 
-require('vendor/twilio/sdk/Services/Twilio.php'); 
 require('TwitterAPIExchange.php');
-
+require('vendor/twilio/sdk/Services/Twilio.php'); 
 $settings = array(
 	'oauth_access_token' => "703981800029294592-vwb34kOaty1TTi7QAJvnSlzcUa0WhH8",
 	'oauth_access_token_secret' => "Lr7KMMp12F1HJbkCuPZbibsC6ynKzWQbKGYpZG8mTSQTs",
@@ -22,6 +21,9 @@ $string = json_decode($twitter->setGetfield($getfield)
 	->performRequest(),$assoc = TRUE);
 if($string["errors"][0]["message"] != "") {echo "<h3>Sorry, there was a problem.</h3><p>Twitter returned the following error message:</p><p><em>".$string[errors][0]["message"]."</em></p>";exit();}
 echo '<pre>'; print_r($string); echo '</pre>';
+$account_sid = 'AC5ddfda7909b9b25c06d3dbdc2dbe5a75'; 
+$auth_token = 'b0d3d3844073b78843bad5647831cdb7'; 
+$client = new Services_Twilio($account_sid, $auth_token); 
 foreach($string as $items)
 {
 	$client->account->messages->create(array( 
