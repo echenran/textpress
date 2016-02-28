@@ -7,6 +7,7 @@
 		$auth_token = 'b0d3d3844073b78843bad5647831cdb7'; 
 		$client = new Services_Twilio($account_sid, $auth_token); 
 		
+		echo "TESTING!!!"
 		echo $client->account->messages;
 		$client->account->messages->create(array( 
 			'To' => "+16465042544", 
