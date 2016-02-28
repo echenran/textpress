@@ -17,11 +17,11 @@ $query = $msg[2];
 $query = str_replace(" ", "%20", $query);
 
 
-if ($service) == "twitter") {
+if ($service == "twitter") {
 	include 'twitter.php';
-} else if ($service) == "nytimes") {
+} else if ($service == "nytimes") {
 	include 'nytimes.php';
-} else if ($service) == "youtube") {
+} else if ($service == "youtube") {
 	include 'youtube.php';
 }
 ?>
