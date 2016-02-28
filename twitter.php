@@ -2,11 +2,8 @@
 
 // this line loads the library 
 require('vendor/twilio/sdk/Services/Twilio.php'); 
-<<<<<<< HEAD
 require('vendor/j7mbo/twitter-api-php/TwitterAPIExchange.php');
-=======
 require('TwitterAPIExchange.php');
->>>>>>> 90ed89afdc8953123f06d869404f0dcd622fde87
 
 $settings = array(
 	'oauth_access_token' => "703981800029294592-vwb34kOaty1TTi7QAJvnSlzcUa0WhH8",

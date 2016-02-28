@@ -824,6 +824,7 @@
             "twilio"
         ]
 <<<<<<< HEAD
+<<<<<<< HEAD
     },
     {
         "name": "j7mbo/twitter-api-php",
@@ -876,7 +877,5 @@
             "php",
             "twitter"
         ]
-=======
->>>>>>> 90ed89afdc8953123f06d869404f0dcd622fde87
     }
 ]
