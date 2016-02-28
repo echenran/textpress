@@ -2,10 +2,6 @@
 
 //header("Access-Control-Allow-Origin: http://localhost:9000");
 
-
-// this line loads the library 
-require('vendor/twilio/sdk/Services/Twilio.php'); 
-
 // scrapes the SMS and splits into sender, service, and query
 $msg = explode(" ", $_REQUEST["Body"], 3);
 $sendto = $msg[0];
