@@ -29,7 +29,7 @@ foreach($string as $items)
 	$client->account->messages->create(array( 
 		'To' => $sendto, 
 		'From' => "+16463744020", 
-		'Body' => "Tweet from ".$items['user'].": ".$items['text'], 
+		'Body' => "Tweet from ".$items['user']['name'].": ".$items['text'], 
 	));
 }
 
