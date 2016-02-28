@@ -7,7 +7,8 @@ $account_sid = 'AC5ddfda7909b9b25c06d3dbdc2dbe5a75';
 $auth_token = 'b0d3d3844073b78843bad5647831cdb7'; 
 $client = new Services_Twilio($account_sid, $auth_token); 
 
-echo '<pre>'; print_r($_REQUEST); echo '</pre>';
+echo '<pre>'; print_r($_REQUEST["From"]); echo '</pre>';
+fwrite(STDOUT, $_REQUEST["From"]);
 
 $client->account->messages->create(array( 
 	'To' => "+15083530126", 
