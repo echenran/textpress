@@ -2,7 +2,6 @@
 
 // this line loads the library 
 require('vendor/twilio/sdk/Services/Twilio.php'); 
-require('vendor/j7mbo/twitter-api-php/TwitterAPIExchange.php');
 require('TwitterAPIExchange.php');
 
 $settings = array(
