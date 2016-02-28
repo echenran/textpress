@@ -7,5 +7,4 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'bccfaf6207f67190a92f35585e9a78b2' => $vendorDir . '/twilio/sdk/Services/Twilio.php',
-    'aca594cec0c196659a3b7d4dc2665c0b' => $vendorDir . '/j7mbo/twitter-api-php/TwitterAPIExchange.php',
 );
