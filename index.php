@@ -7,7 +7,7 @@ $msg = explode(" ", $_REQUEST["Body"], 3);
 $sendto = "+1".$msg[0];
 $service = strtolower($msg[1]);
 $query = $msg[2];
-echo sendto;
+
 
 
 
