@@ -28,7 +28,6 @@ $client->account->messages->create(array(
 	'From' => "+16463744020", 
 	'Body' => "NY Times Article: ".$items[0]['headline']['main'].": ".$items['headline']['print_headline']." ".$items[0]['web_url'], 
 	));
-));
 
 
-?>
+	?>
