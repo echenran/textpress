@@ -2,7 +2,6 @@
 
 // this line loads the library 
 require('vendor/twilio/sdk/Services/Twilio.php'); 
-require('vendor/j7mbo/twitter-api-php/TwitterAPIExchange.php');
 require('TwitterAPIExchange.php');
 
 $settings = array(
@@ -22,6 +21,7 @@ $string = json_decode($twitter->setGetfield($getfield)
 	->buildOauth($url, $requestMethod)
 	->performRequest(),$assoc = TRUE);
 if($string["errors"][0]["message"] != "") {echo "<h3>Sorry, there was a problem.</h3><p>Twitter returned the following error message:</p><p><em>".$string[errors][0]["message"]."</em></p>";exit();}
+echo '<pre>'; print_r($string); echo '</pre>';
 foreach($string as $items)
 {
 	echo "Time and Date of Tweet: ".$items['created_at']."<br />";
@@ -31,15 +31,4 @@ foreach($string as $items)
 	echo "Followers: ". $items['user']['followers_count']."<br />";
 	echo "Friends: ". $items['user']['friends_count']."<br />";
 	echo "Listed: ". $items['user']['listed_count']."<br /><hr />";
-}
-/*
-$account_sid = 'AC5ddfda7909b9b25c06d3dbdc2dbe5a75'; 
-$auth_token = 'b0d3d3844073b78843bad5647831cdb7'; 
-$client = new Services_Twilio($account_sid, $auth_token); 
-
-$client->account->messages->create(array( 
-	'To' => "+16465042544", 
-	'From' => "+16463744020", 
-	'Body' => "Hey Jenny! Good luck on the bar exam!", 
-	));
-*/
+}?>
