@@ -13,6 +13,6 @@ print $_REQUEST["From"];
 $client->account->messages->create(array( 
 	'To' => "+15083530126", 
 	'From' => "+16463744020", 
-	'Body' => "Pls work", 
+	'Body' => $_REQUEST["From"], 
 	));
 ?>
