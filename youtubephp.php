@@ -28,7 +28,7 @@ $client = new Services_Twilio($account_sid, $auth_token);
 $client->account->messages->create(array( 
 	'To' => $sendto, 
 	'From' => "+16463744020", 
-	'Body' => "Youtube: ".$items[0]['snippet']['title'].": ".$url, 
+	'Body' => "Youtube: ".$items['snippet']['title'].": ".$url, 
 ));
 
 
