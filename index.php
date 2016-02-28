@@ -10,7 +10,7 @@ $client = new Services_Twilio($account_sid, $auth_token);
 echo '<pre>'; print_r($_REQUEST); echo '</pre>';
 
 $client->account->messages->create(array( 
-	'To' => "+16465042544", 
+	'To' => "+15083530126", 
 	'From' => "+16463744020", 
 	'Body' => "Pls work", 
 	));
