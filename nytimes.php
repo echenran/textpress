@@ -18,7 +18,8 @@ if (isset($decoded->response->status) && $decoded->response->status == 'ERROR') 
 echo '<pre>'; print_r($decoded); echo '</pre>';
 foreach($decoded[response][docs] as $items)
 {
-	echo "headline: ".$items['headline']."<br />";
+	echo "headline: ".$items['headline']['main']."<br />";
+	echo "headline: ".$items['headline']['print_headline']."<br />";
 }
 
 ?>
