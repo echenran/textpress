@@ -16,7 +16,7 @@ if (strtolower($service) == "twitter") {
 } else if (strtolower($service) == "nytimes") {
 	include 'nytimes.php';
 } else if (strtolower($service) == 'youtube') {
-	include 'youtubephp.php';
+	include 'youtube.php';
 }
 
 ?>
