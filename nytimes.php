@@ -1,7 +1,5 @@
 <?php 
 
-require('vendor/twilio/sdk/Services/Twilio.php'); 
-require('TwitterAPIExchange.php');
 
 $q = "obama";
 $service_url = 'http://api.nytimes.com/svc/search/v2/articlesearch.json?q='.$query.'&fq=headline%3A+'.$query.'&sort=newest&facet_field=section_name&facet_filter=true&api-key=4e51aa8bcd9d88eedb9f23c23b67d9c0:2:74566106';

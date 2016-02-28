@@ -1,8 +1,6 @@
 <?php
 
 // this line loads the library 
-require('vendor/twilio/sdk/Services/Twilio.php'); 
-require('TwitterAPIExchange.php');
 
 $settings = array(
 	'oauth_access_token' => "703981800029294592-vwb34kOaty1TTi7QAJvnSlzcUa0WhH8",
