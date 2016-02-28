@@ -3,7 +3,6 @@
 // this line loads the library 
 require('TwitterAPIExchange.php');
 require('vendor/twilio/sdk/Services/Twilio.php'); 
-$query = "realdonaldtrump";
 $settings = array(
 	'oauth_access_token' => "703981800029294592-vwb34kOaty1TTi7QAJvnSlzcUa0WhH8",
 	'oauth_access_token_secret' => "Lr7KMMp12F1HJbkCuPZbibsC6ynKzWQbKGYpZG8mTSQTs",
@@ -30,7 +29,7 @@ foreach($string as $items)
 	$client->account->messages->create(array( 
 		'To' => $sendto, 
 		'From' => "+16463744020", 
-		'Body' => "Tweet from ".$items['user'].": ".$items['text'], 
+		'Body' => "Tweet from ".$items['user']['name'].": ".$items['text'], 
 	));
 }
 
