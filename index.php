@@ -11,6 +11,8 @@ $sendto = $msg[0];
 $service = $msg[1];
 $query = $msg[2];
 
+
+$query = str_replace(" ", "%20", $query);
 if (strtolower($service) == "twitter") {
 	include 'twitter.php';
 } else if (strtolower($service) == "nytimes") {
