@@ -1,6 +1,6 @@
 <?php 
 
-
+require('vendor/twilio/sdk/Services/Twilio.php'); 
 $service_url = 'http://api.nytimes.com/svc/search/v2/articlesearch.json?q='.$query.'&fq=headline%3A+'.$query.'&sort=newest&facet_field=section_name&facet_filter=true&api-key=4e51aa8bcd9d88eedb9f23c23b67d9c0:2:74566106';
 
 $curl = curl_init($service_url);
@@ -25,5 +25,7 @@ $client->account->messages->create(array(
 	'From' => "+16463744020", 
 	'Body' => "NY Times Article: ".$items[0]['headline']['main'].": ".$items['headline']['print_headline']." ".$items[0]['web_url'], 
 	));
+));
 
-	?>
+
+?>
