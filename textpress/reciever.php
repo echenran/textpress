@@ -15,6 +15,8 @@
 			'Body' => "Hey Jenny! Good luck on the bar exam!", 
 			));
 ?>
-<Response>
+
+<!--<Response>
+
 	<Redirect>https://textpress.herokuapp.com/index.php</Redirect>
-</Response>
+</Response>-->
