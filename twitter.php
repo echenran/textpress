@@ -1,6 +1,7 @@
 <?php
 
 // this line loads the library 
+require('TwitterAPIExchange.php');
 
 $settings = array(
 	'oauth_access_token' => "703981800029294592-vwb34kOaty1TTi7QAJvnSlzcUa0WhH8",
