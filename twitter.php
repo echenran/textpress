@@ -21,6 +21,9 @@ $string = json_decode($twitter->setGetfield($getfield)
 	->performRequest(),$assoc = TRUE);
 if($string["errors"][0]["message"] != "") {echo "<h3>Sorry, there was a problem.</h3><p>Twitter returned the following error message:</p><p><em>".$string[errors][0]["message"]."</em></p>";exit();}
 echo '<pre>'; print_r($string); echo '</pre>';
+$account_sid = 'AC5ddfda7909b9b25c06d3dbdc2dbe5a75'; 
+$auth_token = 'b0d3d3844073b78843bad5647831cdb7'; 
+$client = new Services_Twilio($account_sid, $auth_token); 
 foreach($string as $items)
 {
 	$client->account->messages->create(array( 
