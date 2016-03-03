@@ -26,7 +26,7 @@ if ($service == "twitter") {
 		$client->account->messages->create(array(
 			'To' => $_REQUEST["From"],
 			'From' => "+16463744020",
-			'Body' => "Invalid request. Try again!',
+			'Body' => "Invalid request. Try again!",
 		));
 }
 ?>
