@@ -1,5 +1,8 @@
 <?php
 
+//loads the library
+require('vendor/twilio/sdk/Services/Twilio.php'); 
+
 // scrapes the SMS and splits into sender, service, and query
 $msg = explode(" ", $_REQUEST["Body"], 3);
 $sendto = "+1".$msg[0];
