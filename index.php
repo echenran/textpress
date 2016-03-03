@@ -22,6 +22,7 @@ if ($service == "twitter") {
 } else if ($service == "youtube") {
 	include 'youtube.php';
 } else {
+		//sends return text to sender and alerts of invalid form
 		$client->account->messages->create(array(
 			'To' => $_REQUEST["From"],
 			'From' => "+16463744020",
